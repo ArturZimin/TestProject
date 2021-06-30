@@ -9,7 +9,17 @@ public class RecursionReversNumberFibanachi {
 
 
 
+    public static void countWorldInText(String text){
+        List<String> list = Arrays.asList(text.split(" "));
 
+        Set<String> uniqueWords = new HashSet<String>(list);
+        for (String word : uniqueWords) {
+
+            if (Collections.frequency(list,word)==1){
+                System.out.println(word + ": " + Collections.frequency(list, word));
+            }}
+
+    }
 
     public static int fibonacci(int number) {
 
